@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="flex gap-8 p-6 w-full h-screen bg-zinc-500 justify-center items-center">
+      <div
+        class="border space-y-5 p-6 bg-white w-[439px] h-[488px] rounded-3xl"
+      >
+        <div class="flex justify-between">
+          <div class="flex gap-3 items-center">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-monitor"
+              >
+                <rect width="20" height="14" x="2" y="3" rx="2" />
+                <line x1="8" x2="16" y1="21" y2="21" />
+                <line x1="12" x2="12" y1="17" y2="21" />
+              </svg>
+            </div>
+            <h3>Status Tracker</h3>
+          </div>
+          <div>
+            <button class="border py-2 px-6 rounded-xl shadow-md">
+              See all
+            </button>
+          </div>
+        </div>
+        <hr />
+        <div class="pb-5">
+          <h3 class="text-sm font-medium text-gray-700 mb-2">Absent</h3>
+          <div class="">
+            <li class="flex justify-between place-items-center">
+              <span class="flex items-center">
+                <img
+                  src="/src/img/324009.webp"
+                  alt="Loki"
+                  class="w-12 h-12 object-cover rounded-full mr-2"
+                />
+                <div class="pt-3">
+                  <span class="font-bold text-base">James Brown</span>
+                  <p class="text-gray-700 text-xs">
+                    Replaced by <span class="underline">Lui Brown</span>
+                  </p>
+                  <!-- This will appear on a new line -->
+                </div>
+              </span>
+
+              <span
+              class="py-1 px-2  bg-gray-100 rounded-2xl text-sm text-yellow-700 font-semibold"
+              ><i class="fa-regular fa-clock"></i> Absent</span
+            >
+            </li>
+          </div>
+        </div>
+        <hr />
+        <div class="pt-4">
+          <h3 class="text-sm font-medium text-gray-700 mb-2">Away</h3>
+          <ul class="space-y-3">
+            <li class="flex justify-between items-center">
+              <span class="flex items-center">
+                <img
+                  src="/src/img/wallpapersden.com_k-kyojuro-rengoku_1920x1243.jpg"
+                  alt="Loki"
+                  class="w-12 h-12 object-cover rounded-full mr-2"
+                />
+                <div class="pt-3">
+                  <span class="font-bold text-base">Mesa</span>
+                  <p class="text-gray-700 text-xs">Siem Reap</p>
+                  <!-- This will appear on a new line -->
+                </div>
+              </span>
+
+              <span
+                class="py-1 px-2 bg-yellow-100 rounded-2xl text-sm text-yellow-700 font-semibold"
+                ><i class="fa-regular fa-clock"></i> 25m</span
+              >
+            </li>
+            <li class="flex justify-between items-center">
+              <span class="flex items-center">
+                <img
+                  src="/src/img/wp5122015.webp"
+                  alt="Loki"
+                  class="w-12 h-12 object-cover rounded-full mr-2"
+                />
+                <div class="pt-3">
+                  <span class="font-bold text-base">Thida</span>
+                  <p class="text-gray-700 text-xs">Siem Reap</p>
+                  <!-- This will appear on a new line -->
+                </div>
+              </span>
+              <span
+                class="py-1 px-2 bg-yellow-100 rounded-2xl text-sm text-yellow-700 font-semibold"
+                ><i class="fa-regular fa-clock"></i> 25m
+              </span>
+            </li>
+            <li class="flex justify-between items-center">
+              <span class="flex items-center">
+                <img
+                  src="/src/img/wp5436725.webp"
+                  alt="Loki"
+                  class="w-12 h-12 object-cover rounded-full mr-2"
+                />
+                <div class="pt-3">
+                  <span class="font-bold text-base">Kimvou</span>
+                  <p class="text-gray-700 text-xs">Siem Reap</p>
+                  <!-- This will appear on a new line -->
+                </div>
+              </span>
+              <span
+                class="py-1 px-2 bg-yellow-100 rounded-2xl text-sm text-yellow-700 font-semibold"
+                ><i class="fa-regular fa-clock"></i> 25m</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border space-y-5 p-6 bg-white w-[439px] h-[488px] rounded-3xl">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-lg font-semibold text-gray-800">Buy / Sell Assets</h2>
+          <button class="text-gray-500 hover:text-gray-700">&times;</button>
+        </div>
+        <div class="mb-4">
+          <div class="flex border rounded overflow-hidden mb-4">
+            <button
+              class="w-1/2 py-2 text-center font-semibold text-black bg-white"
+            >
+              Buy
+            </button>
+            <button
+              class="w-1/2 py-2 text-center font-semibold text-gray-700 bg-gray-100"
+            >
+              Sell
+            </button>
+          </div>
+          <h4
+            class="w-full border rounded px-4 py-2 text-xl font-semibold text-center"
+          >
+            450$
+          </h4>
+          <p class="text-center text-gray-500 text-sm mt-2">
+            Your max fund limit: $2000
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex px-6 py-4 border items-center">
+            <span class="text-gray-700 mr-12">Buy</span>
+            <img
+              src="/src/img/Bitcoin-Logo.png"
+              class="w-5 h-5 object-cover mr-1 rounded-full"
+              alt=""
+            />
+            <span class=""> Bitcoin</span>
+          </div>
+          <div class="flex px-5 py-3 border items-center">
+            <span class="text-gray-700 mr-5">Pay with</span>
+            <img
+              src="/src/img/usdtpng.png"
+              class="w-6 h-6 object-cover rounded-full"
+              alt=""
+            />
+            <span class="text-sm">USDT</span>
+            <span class="text-sm index-end"></span>
+          </div>
+        </div>
+        <button
+          class="mt-6 w-full py-2 bg-black text-white rounded font-semibold"
+        >
+          Withdraw
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
